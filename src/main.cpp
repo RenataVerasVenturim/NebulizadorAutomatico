@@ -35,7 +35,7 @@ void loop() {
   Serial.println(" %");
 
   // Lógica para controlar o relé com base na umidade
-  if (h < 74) {
+  if (h < 50) {
     digitalWrite(RELAYPIN, LOW);  // Liga o nebulizador
     Serial.println("Nebulizador LIGADO");
   } else {
